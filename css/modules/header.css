@@ -1,0 +1,44 @@
+header{
+  display: block;
+}
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 1rem;
+}
+
+header main{
+  margin-bottom: 3.2rem;
+}
+
+.text-container{
+  text-align: center;
+}
+
+.text-container h1{
+  color: var(--almost-black);
+  font-size: 2.225rem;
+  margin-bottom: 1.1rem;
+}
+
+.text-container p{
+  color: var(--medium-gray);
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
+
+.content button{
+  display: block;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 15px 23px;
+  border: 0;
+  border-radius: 15px;
+  cursor: pointer;
+}
