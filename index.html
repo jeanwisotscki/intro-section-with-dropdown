@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,17 +15,50 @@
       rel="stylesheet"
     />
 
-    <title>Frontend Mentor | Intro</title>
+    <title>Snap | Frontend Mentor</title>
   </head>
   <body>
-    <header>
-      <div class="hero">
+    <header id="header">
+      <div id="hero">
         <div class="logo">
           <img src="./img/logo.svg" alt="logo" />
         </div>
-        <div class="hamburg">
-          <img src="img/icon-menu.svg" alt="menu icon" />
-        </div>
+        <nav id="nav">
+          <button id="btn-mobile">menu</button>
+          <ul id="menu">
+            <li data-dropdown>
+              <span>Features</span>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item">
+                  <img src="./img/icon-todo.svg" alt="icon" />
+                  <a href="/">Todo List</a>
+                </li>
+                <li class="dropdown-item">
+                  <img src="./img/icon-calendar.svg" alt="icon" />
+                  <a href="/">Calendar</a>
+                </li>
+                <li class="dropdown-item">
+                  <img src="./img/icon-reminders.svg" alt="icon" />
+                  <a href="/">Reminders</a>
+                </li>
+                <li class="dropdown-item">
+                  <img src="./img/icon-planning.svg" alt="icon" />
+                  <a href="/">Planning</a>
+                </li>
+              </ul>
+            </li>
+            <li data-dropdown>
+              <span>Company</span>
+              <ul class="dropdown-menu">
+                <li><a href="/">History</a></li>
+                <li><a href="/">Our Team</a></li>
+                <li><a href="/">Blog</a></li>
+              </ul>
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+        </nav>
       </div>
       <main>
         <img class="img-mobile" src="img/image-hero-mobile.png" alt="image" />

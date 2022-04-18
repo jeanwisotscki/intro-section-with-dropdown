@@ -42,3 +42,8 @@ header main{
   border-radius: 15px;
   cursor: pointer;
 }
+
+
+.dropdown-item{
+  display: flex;
+}
