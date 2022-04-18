@@ -1,4 +1,4 @@
-import outsideClick from "./outside-click.js";
+//import outsideClick from "./outside-click.js";
 
 export default class DropdownMenu {
   constructor(dropdownMenus, events = ["touchstart", "click"]) {
