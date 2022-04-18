@@ -22,8 +22,23 @@ img{
   max-width: 100%;
 }
 
-@media (max-width: 700px) 
-{
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.img-mobile{
+  display: none;
+}
+
+.img-desktop{
+  display: block;
+}
+
+@media (max-width: 700px) {
   .img-mobile{
        display: block;
    }
