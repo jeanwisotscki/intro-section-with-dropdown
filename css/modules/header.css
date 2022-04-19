@@ -1,15 +1,16 @@
 #header{
+  border: 1px solid red;
+
   display: block;
 }
 
 #hero{
   display: flex;
   align-items: center;
-  margin: 1.5rem 1rem;
 }
 
 #hero .logo{
-  margin-right: 3rem;
+  margin: 0 2rem;
 }
 
 #nav{
@@ -17,21 +18,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid red;
 }
 
 #menu{
   display: flex;
 }
 
-#menu li span{
-  margin: 0 1rem;
+#menu > li{
+  border: 1px solid red;
   color: var(--medium-gray);
   font-weight: 700;
+  padding: 30px 15px;
+  cursor: pointer;
 }
 
-#menu li span:hover{
+#menu > li:hover{
   color: var(--almost-black);
-  cursor: pointer;
 }
 
 #btn-mobile{
@@ -43,34 +46,41 @@
 [data-dropdown]{
   position: relative;
 }
+
+[data-dropdown] .dropdown-menu{
+  display: none;
+}
+[data-dropdown]:hover .dropdown-menu{
+  display: block;
+}
+
 .dropdown-menu{
-  width: 165px;
   position: absolute;
-  top: 50px;
+  top: 75px;
   background-color: var(--almost-white);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
   border-radius: 10px;
-  padding: 10px 20px 10px 10px;
+  padding: 20px;
   z-index: 999;
 }
 
 .dropdown-menu li{
-  margin: 10px 0;
-  border: 1px solid transparent;
-}
-
-.dropdown-menu li:hover{
+  width: 120px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
+.dropdown-menu li a{
+  color: var(--medium-gray);
+  margin: 10px;
+}
 .dropdown-menu li:hover a{
   color: var(--almost-black);
 }
 
-.dropdown-menu li a{
-  display: block;
-  color: var(--medium-gray);
-  margin: 10px;
+.dropdown-menu li img{
+  margin-right: 5px;
 }
 
 .dropdown-left{
@@ -79,19 +89,6 @@
 
 .dropdown-right{
   left: 10px;
-}
-
-.dropdown-item{
-  display: flex;
-  align-items: center;
-}
-
-.dropdown-item a{
-  display: block;
-}
-
-.dropdown-item img{
-  margin: 0 10px;
 }
 
 /* header
