@@ -1,6 +1,7 @@
 header#header {
-  display: block;
-  padding: 0 2rem;
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header#header #hero {
@@ -13,7 +14,11 @@ header#header #hero {
 }
 
 header#header #hero .logo {
-  margin-right: 10%;
+  min-width: 90px;
+}
+
+header#header #hero .logo img {
+  width: 140px;
 }
 
 header#header #hero #btn-mobile {
@@ -31,7 +36,9 @@ header#header #hero #nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 0 0 3rem;
   /* menu navigation */
+  /* container btns */
 }
 
 header#header #hero #nav #menu {
@@ -133,6 +140,48 @@ header#header #hero #nav #menu [data-dropdown] .dropdown-right {
   left: 10px;
 }
 
+header#header #hero #nav .container-btns {
+  min-width: 175px;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header#header #hero #nav .container-btns .login {
+  font-family: "Epilogue", sans-serif;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  color: dimgray;
+  padding: 10px 15px;
+  border: 0;
+  cursor: pointer;
+}
+
+header#header #hero #nav .container-btns .register {
+  font-family: "Epilogue", sans-serif;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 700;
+  color: dimgray;
+  padding: 10px 15px;
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header#header #hero #nav .container-btns .register:hover,
+header#header #hero #nav .container-btns .login:hover {
+  color: #141414;
+}
+
 /* Media queries
 *******************/
 * {
@@ -168,7 +217,7 @@ a {
   display: block;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .img-mobile {
     display: block;
   }

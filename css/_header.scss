@@ -1,13 +1,17 @@
 header#header {
-  display: block;
-  padding: 0 2rem;
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
 
   #hero {
     display: flex;
     align-items: center;
 
     .logo {
-      margin-right: 10%;
+      min-width: 90px;
+      img {
+        width: 140px;
+      }
     }
 
     #btn-mobile {
@@ -19,6 +23,7 @@ header#header {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 0 0 0 3rem;
 
       /* menu navigation */
       #menu {
@@ -72,34 +77,71 @@ header#header {
             padding: 20px;
             z-index: 999;
 
-            & li{
+            & li {
               width: 120px;
               display: flex;
               align-items: center;
               cursor: pointer;
 
-              &:hover a{
+              &:hover a {
                 color: $almost-black;
               }
             }
-            
-            & li a{
+
+            & li a {
               color: $medium-gray;
               margin: 10px;
             }
-            
-            & li img{
+
+            & li img {
               margin-right: 5px;
             }
           }
 
-          .dropdown-left{
+          .dropdown-left {
             right: 10px;
           }
-          
-          .dropdown-right{
+
+          .dropdown-right {
             left: 10px;
           }
+        }
+      }
+
+      /* container btns */
+      .container-btns {
+        min-width: 175px;
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .login {
+          font-family: "Epilogue", sans-serif;
+          background-color: transparent;
+          font-size: 1rem;
+          font-weight: 700;
+          color: $medium-gray;
+          padding: 10px 15px;
+          border: 0;
+          cursor: pointer;
+        }
+
+        .register {
+          font-family: "Epilogue", sans-serif;
+          background-color: transparent;
+          font-size: 1rem;
+          font-weight: 700;
+          color: $medium-gray;
+          padding: 10px 15px;
+          border: 2px solid;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+
+        .register:hover,
+        .login:hover {
+          color: $almost-black;
         }
       }
     }
