@@ -63,6 +63,7 @@ header#header {
           }
           & .dropdown-menu {
             display: none;
+            animation: show-up 0.3s ease;
           }
           &:hover .dropdown-menu {
             display: block;
@@ -145,8 +146,16 @@ header#header {
         }
       }
     }
+    /* Media queries
+    *******************/
+    @media (max-width: 838px) {
+      #btn-mobile {
+        display: block;
+      }
+
+      #nav{
+        display: none;
+      }
+    }
   }
 }
-
-/* Media queries
-*******************/

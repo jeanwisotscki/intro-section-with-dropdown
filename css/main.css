@@ -11,6 +11,8 @@ header#header #hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* Media queries
+    *******************/
 }
 
 header#header #hero .logo {
@@ -91,6 +93,8 @@ header#header #hero #nav #menu [data-dropdown]:hover::after {
 
 header#header #hero #nav #menu [data-dropdown] .dropdown-menu {
   display: none;
+  -webkit-animation: show-up 0.3s ease;
+          animation: show-up 0.3s ease;
 }
 
 header#header #hero #nav #menu [data-dropdown]:hover .dropdown-menu {
@@ -182,8 +186,42 @@ header#header #hero #nav .container-btns .login:hover {
   color: #141414;
 }
 
-/* Media queries
-*******************/
+@media (max-width: 838px) {
+  header#header #hero #btn-mobile {
+    display: block;
+  }
+  header#header #hero #nav {
+    display: none;
+  }
+}
+
+/* keyframes
+***************/
+@-webkit-keyframes show-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+            transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes show-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 30px, 0);
+            transform: translate3d(0, 30px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -217,7 +255,7 @@ a {
   display: block;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 838px) {
   .img-mobile {
     display: block;
   }
