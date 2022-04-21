@@ -11,8 +11,6 @@ header#header #hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* Media queries
-    *******************/
 }
 
 header#header #hero .logo {
@@ -186,7 +184,28 @@ header#header #hero #nav .container-btns .login:hover {
   color: #141414;
 }
 
+/* Media queries header
+**************************/
 @media (max-width: 838px) {
+  .img-mobile {
+    display: block;
+  }
+  .img-desktop {
+    display: none;
+  }
+  header#header #hero {
+    border: 1px solid red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 2rem;
+  }
   header#header #hero #btn-mobile {
     display: block;
   }

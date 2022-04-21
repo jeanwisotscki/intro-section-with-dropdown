@@ -146,14 +146,33 @@ header#header {
         }
       }
     }
-    /* Media queries
-    *******************/
-    @media (max-width: 838px) {
+  }
+}
+
+/* Media queries header
+**************************/
+@media (max-width: 838px) {
+  .img-mobile {
+    display: block;
+  }
+
+  .img-desktop {
+    display: none;
+  }
+
+  header#header {
+    #hero {
+      border: 1px solid red;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2rem;
+
       #btn-mobile {
         display: block;
       }
 
-      #nav{
+      #nav {
         display: none;
       }
     }
