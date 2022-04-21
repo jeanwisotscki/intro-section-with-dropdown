@@ -24,7 +24,16 @@
         <div class="logo">
           <img src="./img/logo.svg" alt="logo" />
         </div>
-        <button id="btn-mobile">menu</button>
+        <button
+          aria-label="Abrir menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <!--Botão do menu hamburguer-->
+          <span id="hamburguer"></span>
+        </button>
         <nav id="nav">
           <ul id="menu">
             <li data-dropdown>
