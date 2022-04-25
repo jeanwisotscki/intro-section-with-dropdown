@@ -7,14 +7,14 @@ header#header {
   padding: 1rem;
 
   .hero {
-    width: 90%;
     max-width: 1280px;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     border: 1px solid red;
 
     #logo {
-      padding: 1rem;
+      padding: 1rem 3rem 1rem 1rem;
     }
 
     nav#nav {
@@ -29,12 +29,44 @@ header#header {
 
       ul#menu {
         display: flex;
+        align-items: center;
         list-style: none;
         gap: 0.5rem;
 
+        [data-dropdown] > a {
+          display: flex;
+          align-items: center;
+
+          &::after {
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin-left: 7px;
+            background-image: url("../img/icon-arrow-down.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+          }
+
+          &:hover::after {
+            background-image: url("../img/icon-arrow-up.svg");
+          }
+        }
+        [data-dropdown].active > a::after,
+        [data-dropdown]:hover > a::after{
+          background-image: url("../img/icon-arrow-up.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+
         a {
-          display: block;
+          color: $medium-gray;
+          font-weight: 700;
           padding: 0.5rem;
+
+          &:hover {
+            color: $almost-black;
+          }
         }
 
         /* Dropdown
@@ -120,7 +152,7 @@ header#header {
           visibility: visible;
         }
 
-        .container-btns{
+        .container-btns {
           display: none;
         }
 

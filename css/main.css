@@ -40,8 +40,8 @@ header#header {
 }
 
 header#header .hero {
-  width: 90%;
   max-width: 1280px;
+  width: 90%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,7 +50,7 @@ header#header .hero {
 }
 
 header#header .hero #logo {
-  padding: 1rem;
+  padding: 1rem 3rem 1rem 1rem;
 }
 
 header#header .hero nav#nav {
@@ -74,15 +74,54 @@ header#header .hero nav#nav ul#menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
   gap: 0.5rem;
   /* Dropdown
         *******************/
 }
 
-header#header .hero nav#nav ul#menu a {
+header#header .hero nav#nav ul#menu [data-dropdown] > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header#header .hero nav#nav ul#menu [data-dropdown] > a::after {
+  content: "";
   display: block;
+  width: 10px;
+  height: 10px;
+  margin-left: 7px;
+  background-image: url("../img/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+header#header .hero nav#nav ul#menu [data-dropdown] > a:hover::after {
+  background-image: url("../img/icon-arrow-up.svg");
+}
+
+header#header .hero nav#nav ul#menu [data-dropdown].active > a::after,
+header#header .hero nav#nav ul#menu [data-dropdown]:hover > a::after {
+  background-image: url("../img/icon-arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+header#header .hero nav#nav ul#menu a {
+  color: dimgray;
+  font-weight: 700;
   padding: 0.5rem;
+}
+
+header#header .hero nav#nav ul#menu a:hover {
+  color: #141414;
 }
 
 header#header .hero nav#nav ul#menu [data-dropdown] {
