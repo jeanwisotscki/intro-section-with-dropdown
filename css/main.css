@@ -43,13 +43,21 @@ header#header {
 }
 
 header#header #logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  border: 1px solid red;
 }
 
-header#header #logo a {
-  display: block;
-  padding: 1rem;
+header#header nav#nav {
+  border: 1px solid;
 }
 
 header#header nav#nav #btn-mobile {
@@ -166,7 +174,7 @@ header#header nav#nav ul#menu [data-dropdown].active .dropdown-menu {
 }
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Epilogue', sans-serif;
 }
 
 body,
@@ -186,5 +194,10 @@ a {
 
 a:hover {
   background: rgba(0, 0, 0, 0.05);
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

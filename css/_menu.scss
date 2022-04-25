@@ -8,16 +8,16 @@ header#header {
   padding: 1rem;
 
   #logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-
-    a {
-      display: block;
-      padding: 1rem;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border: 1px solid red;
   }
 
   nav#nav {
+    border: 1px solid;
+
     #btn-mobile {
       display: none;
     }
