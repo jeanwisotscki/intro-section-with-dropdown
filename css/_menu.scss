@@ -115,7 +115,39 @@ header#header {
       }
 
       .container-btns {
-        border: 1px solid red;
+        min-width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .login{
+          background: none;
+          color: $medium-gray;
+          font-size: 1rem;
+          font-weight: 700;
+          padding: .8rem 1.5rem;
+          border: 0;
+          cursor: pointer;
+
+          &:hover{
+            color: $almost-black;
+          }
+        }
+
+        .register{
+          background: none;
+          color: $medium-gray;
+          font-size: 1rem;
+          font-weight: 700;
+          padding: .8rem 1.5rem;
+          border: 2px solid;
+          border-radius: 15px;
+          cursor: pointer;
+
+          &:hover{
+            color: $almost-black;
+          }
+        }
       }
     }
   }

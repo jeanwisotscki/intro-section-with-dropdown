@@ -172,7 +172,45 @@ header#header .hero nav#nav ul#menu [data-dropdown] .right-0 {
 }
 
 header#header .hero nav#nav .container-btns {
-  border: 1px solid red;
+  min-width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header#header .hero nav#nav .container-btns .login {
+  background: none;
+  color: dimgray;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .8rem 1.5rem;
+  border: 0;
+  cursor: pointer;
+}
+
+header#header .hero nav#nav .container-btns .login:hover {
+  color: #141414;
+}
+
+header#header .hero nav#nav .container-btns .register {
+  background: none;
+  color: dimgray;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .8rem 1.5rem;
+  border: 2px solid;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+header#header .hero nav#nav .container-btns .register:hover {
+  color: #141414;
 }
 
 /* Media queries
