@@ -131,15 +131,42 @@ header#header .hero nav#nav ul#menu [data-dropdown] {
 header#header .hero nav#nav ul#menu [data-dropdown] .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #e7e7e7;
+  background-color: #fafafa;
   list-style: none;
-  border: 1px solid black;
+  border-radius: 7px;
+  padding: 1rem 1.5rem;
+  -webkit-box-shadow: 0px 4px 30px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 30px 5px rgba(0, 0, 0, 0.3);
   z-index: 999;
+}
+
+header#header .hero nav#nav ul#menu [data-dropdown] .dropdown-menu .icon {
+  min-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header#header .hero nav#nav ul#menu [data-dropdown] .dropdown-menu .icon img {
+  width: 20px;
+}
+
+header#header .hero nav#nav ul#menu [data-dropdown] .dropdown-menu li a {
+  display: block;
+  min-width: 100px;
+  margin: 5px 0;
 }
 
 header#header .hero nav#nav ul#menu [data-dropdown]:hover .dropdown-menu,
 header#header .hero nav#nav ul#menu [data-dropdown].active .dropdown-menu {
   display: block;
+}
+
+header#header .hero nav#nav ul#menu [data-dropdown] .left {
+  right: 0;
 }
 
 header#header .hero nav#nav .container-btns {
