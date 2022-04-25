@@ -2,8 +2,6 @@ $almost-white: hsl(0, 0%, 98%);
 $medium-gray: hsl(0, 0%, 41%);
 $almost-black: hsl(0, 0%, 8%);
 
-@import "header";
-
 /* keyframes
 ***************/
 @keyframes show-up {
@@ -17,20 +15,16 @@ $almost-black: hsl(0, 0%, 8%);
   }
 }
 
+@import "menu";
+
 * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body,
+ul {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Epilogue", sans-serif;
-  background-color: $almost-white;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 li {
@@ -38,23 +32,10 @@ li {
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
-.img-mobile {
-  display: none;
-}
-
-.img-desktop {
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .img-mobile {
-    display: block;
-  }
-
-  .img-desktop {
-    display: none;
-  }
+a:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
