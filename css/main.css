@@ -303,8 +303,12 @@ header#header .hero nav#nav .container-btns .register:hover {
   }
 }
 
+#main-content {
+  background-color: aqua;
+}
+
 * {
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
