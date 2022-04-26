@@ -10,9 +10,11 @@ header#header {
     width: 90%;
     margin: 0 auto;
     display: flex;
+    align-items: center;
 
     #logo {
-      padding: 1rem 3rem 1rem 1rem;
+      min-width: 90px;
+      margin-right: 2rem;
     }
 
     nav#nav {
@@ -155,14 +157,13 @@ header#header {
 
 /* Media queries
 *************************/
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   header#header {
     .hero {
       /* Menu mobile
       *****************/
       nav#nav {
         justify-content: end;
-        border: 1px solid red;
 
         #btn-mobile {
           display: flex;
@@ -177,11 +178,12 @@ header#header {
         ul#menu {
           display: block;
           position: absolute;
+          height: 0px;
           width: 50%;
           top: 70px;
           right: 0;
-          background: #e7e7e7;
-          height: 0px;
+          background: $almost-white;
+          box-shadow: -10px 30px 25px 5px rgba(0,0,0,0.3);
           transition: 0.3s;
           z-index: 1000;
           visibility: hidden;
