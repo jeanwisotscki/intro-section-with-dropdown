@@ -1,3 +1,9 @@
 #main-content{
   background-color: aqua;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }

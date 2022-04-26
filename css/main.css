@@ -305,6 +305,14 @@ header#header .hero nav#nav .container-btns .register:hover {
 
 #main-content {
   background-color: aqua;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 * {
