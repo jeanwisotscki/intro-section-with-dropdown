@@ -304,7 +304,6 @@ header#header .hero nav#nav .container-btns .register:hover {
 }
 
 #main-content {
-  background-color: aqua;
   max-width: 980px;
   width: 100%;
   margin: 0 auto;
@@ -312,7 +311,51 @@ header#header .hero nav#nav .container-btns .register:hover {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+#main-content .images {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  border: 1px solid red;
+}
+
+#main-content .images .img-mobile {
+  display: none;
+}
+
+#main-content .infos {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+}
+
+#main-content .infos .text-container {
+  background-color: blue;
+}
+
+#main-content .infos .clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: yellow;
 }
 
 * {

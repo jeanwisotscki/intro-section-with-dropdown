@@ -1,9 +1,35 @@
-#main-content{
-  background-color: aqua;
+#main-content {
   max-width: 980px;
   width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
+
+  .images {
+    order: 2;
+    border: 1px solid red;
+    .img-mobile {
+      display: none;
+    }
+  }
+
+  .infos {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid red;
+
+    .text-container {
+      background-color: blue;
+    }
+
+    .clients {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: yellow;
+    }
+  }
 }
