@@ -1,14 +1,15 @@
 #main-content {
   max-width: 980px;
   width: 100%;
-  margin: 0 auto;
+  margin: 3rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
 
   .images {
     order: 2;
-    border: 1px solid red;
+    width: 80%;
+    margin-left: auto;
+
     .img-mobile {
       display: none;
     }
@@ -19,17 +20,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid red;
 
     .text-container {
-      background-color: blue;
+      h1 {
+        font-size: 4rem;
+        margin-top: 4rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      button {
+        font-size: 1rem;
+      }
     }
 
     .clients {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background-color: yellow;
     }
   }
 }

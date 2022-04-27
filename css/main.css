@@ -306,19 +306,19 @@ header#header .hero nav#nav .container-btns .register:hover {
 #main-content {
   max-width: 980px;
   width: 100%;
-  margin: 0 auto;
+  margin: 3rem auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 1rem;
 }
 
 #main-content .images {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  border: 1px solid red;
+  width: 80%;
+  margin-left: auto;
 }
 
 #main-content .images .img-mobile {
@@ -339,11 +339,19 @@ header#header .hero nav#nav .container-btns .register:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid red;
 }
 
-#main-content .infos .text-container {
-  background-color: blue;
+#main-content .infos .text-container h1 {
+  font-size: 4rem;
+  margin-top: 4rem;
+}
+
+#main-content .infos .text-container p {
+  font-size: 1rem;
+}
+
+#main-content .infos .text-container button {
+  font-size: 1rem;
 }
 
 #main-content .infos .clients {
@@ -355,7 +363,6 @@ header#header .hero nav#nav .container-btns .register:hover {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: yellow;
 }
 
 * {
