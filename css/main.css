@@ -358,10 +358,17 @@ header#header .hero nav#nav .container-btns .register:hover {
   background-color: #141414;
   color: #fafafa;
   font-size: 1rem;
+  font-weight: 700;
   padding: 0.8rem 1.2rem;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 10px;
   cursor: pointer;
+}
+
+#main-content .infos .text-container button:hover {
+  background-color: transparent;
+  color: #141414;
+  border: 2px solid dimgray;
 }
 
 #main-content .infos .clients {
