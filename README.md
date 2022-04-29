@@ -6,7 +6,8 @@ Confira o resultado clicando [aqui](https://jeanwisotscki.github.io/intro-sectio
 
 ## Design
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Desktop](./img/desktop-preview.jpg)
+![Mobile](./img/mobile-design.jpg)
 
 ## Techs usadas no desenvolvimento
 
