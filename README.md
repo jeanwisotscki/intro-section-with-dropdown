@@ -2,10 +2,11 @@
 
 Desafio do site [frontendmentor.io](https://www.frontendmentor.io/) | Feito como projeto de estudo, possui menu de navegação com dropdown, função click outside e design responsivo.
 
+Confira o resultado clicando [aqui](https://jeanwisotscki.github.io/intro-section-with-dropdown/)
+
 ## Design
 
-![Desktop](./img/desktop-preview.jpg)
-![Mobile](./img/mobile-design.jpg)
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 ## Techs usadas no desenvolvimento
 
