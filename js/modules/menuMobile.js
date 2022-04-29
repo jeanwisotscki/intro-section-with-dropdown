@@ -1,4 +1,4 @@
-import outsideClick from "./outsideClick.js";
+import clickOutside from "./clickOutside.js";
 
 export default class MenuMobile {
   constructor(menuBtn, menuList, events = ["click", "touchstart"]) {
@@ -19,7 +19,7 @@ export default class MenuMobile {
     this.menuBtn.classList.add(this.activeClass);
     this.nav.classList.add(this.activeClass);
 
-    outsideClick(this.menuList, this.events, () => {
+    clickOutside(this.menuList, this.events, () => {
       this.menuList.classList.remove(this.activeClass);
       this.menuBtn.classList.remove(this.activeClass);
       this.nav.classList.remove(this.activeClass);
@@ -28,8 +28,8 @@ export default class MenuMobile {
 
   addMenuMobileEvents() {
     if (this.menuBtn) {
-      this.events.forEach((evento) =>
-        this.menuBtn.addEventListener(evento, this.openMenu)
+      this.events.forEach((event) =>
+        this.menuBtn.addEventListener(event, this.openMenu)
       );
     }
   }
